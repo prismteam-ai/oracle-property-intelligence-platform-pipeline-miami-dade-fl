@@ -1,0 +1,75 @@
+name: Scheduled ingest
+
+# Re-read the county sources every day. If anything changed, publish a new
+# snapshot to IPFS and record it; if nothing changed, record the check only.
+# Runs on a fresh machine each time: state is restored from the last snapshot.
+# Code comes from the working branch; the growing record of publications and checks is
+# kept on the `ingest-history` branch, so daily runs add no commits to the code branch.
+on:
+  schedule:
+    - cron: "17 9 * * *" # 09:17 UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ingest
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: miami-dade-pipeline
+      - uses: actions/checkout@v4
+        with:
+          ref: ingest-history
+          path: _history
+      - name: Use the latest publication history
+        run: |
+          rm -rf publications
+          cp -r _history/publications publications
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+
+      - name: Restore pipeline state from the last published snapshot
+        run: npm run restore
+
+      - name: Re-read every source
+        run: npm run ingest:all
+
+      - name: Did anything change?
+        id: check
+        run: npm run record-check
+
+      - name: Build and publish a new snapshot
+        if: steps.check.outputs.changed == 'true'
+        env:
+          FILEBASE_ACCESS_KEY: ${{ secrets.FILEBASE_ACCESS_KEY }}
+          FILEBASE_SECRET_KEY: ${{ secrets.FILEBASE_SECRET_KEY }}
+          FILEBASE_BUCKET: ${{ secrets.FILEBASE_BUCKET }}
+        run: |
+          npm run snapshot
+          npm run publish-snapshot
+
+      - name: Record the result in Git
+        run: |
+          rm -rf _history/publications
+          cp -r publications _history/publications
+          cd _history
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add publications
+          if git diff --cached --quiet; then
+            echo "Nothing to record"
+          else
+            git commit -m "Scheduled ingest: ${{ steps.check.outputs.changed == 'true' && 'publish a new snapshot' || 'no change' }}"
+            git push origin HEAD:ingest-history
+          fi

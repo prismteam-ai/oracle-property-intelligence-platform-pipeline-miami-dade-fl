@@ -1,0 +1,173 @@
+{
+  "schema": "oracle-snapshot-manifest/1",
+  "county": {
+    "name": "Miami-Dade",
+    "state": "FL",
+    "fips": "12086",
+    "slug": "miami-dade"
+  },
+  "snapshot_id": "20261117T041628Z",
+  "created_at": "2026-11-17T04:16:28.177Z",
+  "root": {
+    "cid": "bafybeifl7lw5zxlyom5xr6rrtuvpf4ddqzv7skni2yowfbjgc3kqeuspu4",
+    "codec": "directory"
+  },
+  "previous": {
+    "snapshot_id": "20261117T035644Z",
+    "manifest_cid": "bafkreifbvuaqpy2ed7jf3h6o76jyrwfv4o5sryxvhwkzyi7s6lgfhyurkq",
+    "root_cid": "bafybeiekhrt6gbt6olh232znbecaej3jpcajz6cf72jv75gzfb7nnw7vhy"
+  },
+  "artifacts": [
+    {
+      "name": "/",
+      "cid": "bafybeifl7lw5zxlyom5xr6rrtuvpf4ddqzv7skni2yowfbjgc3kqeuspu4",
+      "codec": "directory",
+      "size": 162071883,
+      "sha256": null
+    },
+    {
+      "name": "coverage.json",
+      "cid": "bafkreiek5k7bidz66nofecjrm3hh2hre7yot5ggfel7t3t2paney3uzqtm",
+      "codec": "file",
+      "size": 5061,
+      "sha256": "8aeabe140f3ef35c52093166ce7d1e24fe1d3e98c522ff3dcf4f03498dd3309b"
+    },
+    {
+      "name": "runs.json",
+      "cid": "bafkreiczido5szrqcmqxdg7n6hi4lv4vujfnggxn3rqtaigp4qz72nwxeu",
+      "codec": "file",
+      "size": 3825,
+      "sha256": "5940ddd966301321719bedf1d1c5d795a24ad31aeddc613020cfe433fd36d725"
+    },
+    {
+      "name": "samples",
+      "cid": "bafybeigqpgkxjctn66yjzujktlzlq4tnkegc24a2yhi5bl6nbzytgne7te",
+      "codec": "directory",
+      "size": 284705,
+      "sha256": null
+    },
+    {
+      "name": "samples/contractor.json",
+      "cid": "bafkreiev4af2uulsjgcan6agi374n5ynky4javifljxutzywl26hymcgjy",
+      "codec": "file",
+      "size": 58008,
+      "sha256": "95e00baa5172498406f80646ffc6f70d56389055055a6f49e7165ebc7c30464e"
+    },
+    {
+      "name": "samples/open_roofing_permits.json",
+      "cid": "bafkreiapppn77krk5nlorbr4fuzwr5jpkyumn47l5t3v5sqabzmxm4pq5u",
+      "codec": "file",
+      "size": 109210,
+      "sha256": "0f7bdbffaa2aeb56e8863c2d3368f52f5628c6f3ebecf75eca000e597671f0ed"
+    },
+    {
+      "name": "samples/property.json",
+      "cid": "bafkreid7mowviipj3wuwawncu2klnqjjohnkucui5djhhy4jrevthkpl6q",
+      "codec": "file",
+      "size": 117292,
+      "sha256": "7f63ad5421e9dda96059a2a694b6c12971daaa0a88e8d273e389892b33a9ebf4"
+    },
+    {
+      "name": "state",
+      "cid": "bafybeiahog4rnwuscrddww5duucrwbimfgnkfltulusxlg6akkcodruk5u",
+      "codec": "directory",
+      "size": 53541613,
+      "sha256": null
+    },
+    {
+      "name": "state/key_state_contractors.parquet",
+      "cid": "bafybeicd6pdr5fhxk7gbbyplrwg3t2mtcuxo2emxi2tcznisqaerppwhyy",
+      "codec": "file",
+      "size": 1056605,
+      "sha256": "d20d4f365facd2ad9eca9d04cd394aef970c1504366762ba4dec7a1ef9c2ae5d"
+    },
+    {
+      "name": "state/key_state_permits.parquet",
+      "cid": "bafybeihbcsnp5yzqlwamous7s3qh45ikm7iigd5waw7gewi64mnmtfnz2e",
+      "codec": "file",
+      "size": 17813198,
+      "sha256": "7f9f91876d78a8ee55aef9b6b90149ba09cbd973d80dc1471140059e0f676934"
+    },
+    {
+      "name": "state/key_state_properties.parquet",
+      "cid": "bafybeihhmwgbfeccdpgyyflalcb3reeicjgfc6sm7qxkmrv2lexjll3pqm",
+      "codec": "file",
+      "size": 34655054,
+      "sha256": "bae751eb8fd465d5d128719d42f958f9dd6d29674bf94643d55f46d82b3832e0"
+    },
+    {
+      "name": "state/pipeline_change.parquet",
+      "cid": "bafkreic3ej3qzazwvxcav35fhyg5iiquq7jffk3j3yp5hgqh4o7dywbxbu",
+      "codec": "file",
+      "size": 165,
+      "sha256": "5b22770c8336adc40aefa53e0dd4221487d252ab69de1fd39a07e3be3c58370d"
+    },
+    {
+      "name": "state/pipeline_run_source.parquet",
+      "cid": "bafkreiabzafmt635656o2miqzrfs6357wn6my27kiw6dznubzt55nmdsla",
+      "codec": "file",
+      "size": 4660,
+      "sha256": "01c80ac9fb7df77ced3110cc4b2f6fbfb37ccc6bea45bc3cb681ccfbd6b07258"
+    },
+    {
+      "name": "state/pipeline_run.parquet",
+      "cid": "bafkreifhl5gubfb5k6t2ar2v74be4bipatev77c6huzycdh2wcm5g2xaby",
+      "codec": "file",
+      "size": 1174,
+      "sha256": "a75f4d40943d57a7a04755ff024e050f04c95ffc5e3d33810cfab099d36ae00e"
+    },
+    {
+      "name": "tables",
+      "cid": "bafybeidzu3ngvs25o52icoj4mel5uujalhwqei4upbfizlyimkd7uf3fpq",
+      "codec": "directory",
+      "size": 108236405,
+      "sha256": null
+    },
+    {
+      "name": "tables/contractor.parquet",
+      "cid": "bafybeigqcdkeuk2c5yh6zl7mkshtz5w3am3zdgu5zkhivyfu64jhleitfa",
+      "codec": "file",
+      "size": 324053,
+      "sha256": "91cbf9752099105e4026245fc07aedfa53bc6d4c18a064fbff5b5dc5455d9965"
+    },
+    {
+      "name": "tables/owner.parquet",
+      "cid": "bafybeidz43ruyjznspwijxwjjaymxwic7hkl77ctzifix6ke2e4v52empy",
+      "codec": "file",
+      "size": 29795342,
+      "sha256": "6d3d6d0c6ef982160e06f9d29af937284f206bb06429130259cf089aaed22e6b"
+    },
+    {
+      "name": "tables/permit.parquet",
+      "cid": "bafybeiadc6vcyd6ky566gfdgzbcywl4lawyzi4j343cduvs55upskjdrr4",
+      "codec": "file",
+      "size": 21924873,
+      "sha256": "91df3de882fb0164283172e6ea7f2ce891b6b414b76988e32cdb2a95710feabb"
+    },
+    {
+      "name": "tables/place.parquet",
+      "cid": "bafkreigztuwsjkkrv3xjzpp75zbmjn6xnkivhsecpm7sddp2csi2qzv27i",
+      "codec": "file",
+      "size": 1614,
+      "sha256": "d99d2d24a951aeee9cbdffee42c4b7d76a9153c8827b3f218dfa1491a866bafa"
+    },
+    {
+      "name": "tables/property.parquet",
+      "cid": "bafybeifrhienselodbjubcmjjcjldmehw26iv4fdmmbk5vx2mfov6jj7gm",
+      "codec": "file",
+      "size": 56169302,
+      "sha256": "6c9adb13616018a8b4613182652ccfb7c6e2e934d4d77b24fc6ebae3c87e8fc9"
+    }
+  ],
+  "car": {
+    "name": "snapshot.car",
+    "cid": "bafybeihz75azherh5m66dq3cmtifq362ckqs7cdsnqhp7vjcgj653bfzum",
+    "codec": "file",
+    "size": 162096999,
+    "sha256": "bf6d0f8fcdcfc63e072270c6ae65a191375d4180c8a14d02d013886b00706c66",
+    "roots": [
+      "bafybeifl7lw5zxlyom5xr6rrtuvpf4ddqzv7skni2yowfbjgc3kqeuspu4"
+    ],
+    "blocks": 643
+  }
+}

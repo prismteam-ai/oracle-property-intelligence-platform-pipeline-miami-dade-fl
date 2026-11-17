@@ -1,0 +1,5 @@
+node_modules/
+# Working store and raw captures stay out of Git; published artifacts are referenced by CID.
+data/
+.env*
+!.env.example

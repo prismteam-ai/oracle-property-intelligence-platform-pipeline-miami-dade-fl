@@ -1,0 +1,37 @@
+{
+  "name": "oracle-pipeline-miami-dade-fl",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Incremental Oracle ingestion pipeline for Miami-Dade County, FL: public sources -> DuckDB -> content-addressed IPFS snapshots.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "ingest": "tsx src/run.ts",
+    "runs": "tsx src/runs.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "model": "tsx src/build-model.ts",
+    "snapshot": "tsx src/snapshot.ts",
+    "restore": "tsx src/restore.ts",
+    "publish-snapshot": "tsx src/publish.ts",
+    "ingest:all": "tsx src/run.ts --source properties && tsx src/run.ts --source permits && tsx src/run.ts --source contractors && tsx src/run.ts --source state_licences && tsx src/run.ts --source bbb_profiles",
+    "record-check": "tsx src/record-check.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1170.0",
+    "@aws-sdk/lib-storage": "^3.1170.0",
+    "@duckdb/node-api": "^2.0.0-r.1",
+    "@ipld/car": "^5.4.7",
+    "ipfs-unixfs-importer": "^17.1.1",
+    "multiformats": "^14.0.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

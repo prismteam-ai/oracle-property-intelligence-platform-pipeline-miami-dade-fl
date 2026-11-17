@@ -1,0 +1,58 @@
+[
+  {
+    "snapshot_id": "20261117T035644Z",
+    "created_at": "2026-11-17T03:56:44.833Z",
+    "manifest_cid": "bafkreifbvuaqpy2ed7jf3h6o76jyrwfv4o5sryxvhwkzyi7s6lgfhyurkq",
+    "root_cid": "bafybeiekhrt6gbt6olh232znbecaej3jpcajz6cf72jv75gzfb7nnw7vhy",
+    "car_cid": "bafybeidrrhe7wi7rm5kqzyoymsvihgnoatsnokhh6sldc2bhcj3zawpd6a",
+    "previous_manifest_cid": null
+  },
+  {
+    "snapshot_id": "20261117T041628Z",
+    "created_at": "2026-11-17T04:16:28.177Z",
+    "manifest_cid": "bafkreihwquprnniz3lhbki2wdq3iiapg2445qtzg53im5oy34umudec4vu",
+    "root_cid": "bafybeifl7lw5zxlyom5xr6rrtuvpf4ddqzv7skni2yowfbjgc3kqeuspu4",
+    "car_cid": "bafybeihz75azherh5m66dq3cmtifq362ckqs7cdsnqhp7vjcgj653bfzum",
+    "previous_manifest_cid": "bafkreifbvuaqpy2ed7jf3h6o76jyrwfv4o5sryxvhwkzyi7s6lgfhyurkq"
+  },
+  {
+    "snapshot_id": "20261117T050847Z",
+    "created_at": "2026-11-17T05:08:47.110Z",
+    "manifest_cid": "bafkreid7rvjugll3nrdmgj4gs6a3wy4ko3mlbtzdbohxxl54fqmdoyeg7q",
+    "root_cid": "bafybeiaxyhj7oulrxfe4sogp3fqgex5oktarduz6hcvhh72voezo4be46e",
+    "car_cid": "bafybeiguzulitzo3veym66pyrnatamxpkutlpfgo6vuw5tl4zs4ps5mshi",
+    "previous_manifest_cid": "bafkreihwquprnniz3lhbki2wdq3iiapg2445qtzg53im5oy34umudec4vu"
+  },
+  {
+    "snapshot_id": "20261117T060445Z",
+    "created_at": "2026-11-17T06:04:45.281Z",
+    "manifest_cid": "bafkreifcdgsw5vwi6x6zwnpgtago6aodhtjhz7k5ogavkgypibp67hicdi",
+    "root_cid": "bafybeiea25rq5xhfaxxxdojanlbeulg7rvcrcodwx2ubui2pbhdt5fpcvy",
+    "car_cid": "bafybeifwufg2hvbrymn3ehxikeppqy4232o3vohpv7yxvfvvmqzqxla25a",
+    "previous_manifest_cid": "bafkreid7rvjugll3nrdmgj4gs6a3wy4ko3mlbtzdbohxxl54fqmdoyeg7q"
+  },
+  {
+    "snapshot_id": "20261117T151031Z",
+    "created_at": "2026-11-17T15:10:31.097Z",
+    "manifest_cid": "bafkreicrjrao7xyp4pi4o4utwjmt5ra3k2t3mnqus6njgrbxrzacnjy3ue",
+    "root_cid": "bafybeidx7bmczxrvgpgxd3hj62rjczcwwzjdx42346juob6oiqj4zsznvq",
+    "car_cid": "bafybeihcfa4tzv34cve7n3sam5n6bo2u4xpyknusummvlh456rsy5cklrq",
+    "previous_manifest_cid": "bafkreifcdgsw5vwi6x6zwnpgtago6aodhtjhz7k5ogavkgypibp67hicdi"
+  },
+  {
+    "snapshot_id": "20261117T152027Z",
+    "created_at": "2026-11-17T15:20:27.118Z",
+    "manifest_cid": "bafkreiecrknmweialqcdloyohji46vo4esr7vkkw4laxxiq4golcmg7wjq",
+    "root_cid": "bafybeidtcryeiojsdr2rd2uaela2e763d2xravwbzicilgwinbpsyyu45e",
+    "car_cid": "bafybeiguhbxdcnlrrrbuymm62w6rzepriyw3m6h5nk7qwbhkosgxcv2csm",
+    "previous_manifest_cid": "bafkreicrjrao7xyp4pi4o4utwjmt5ra3k2t3mnqus6njgrbxrzacnjy3ue"
+  },
+  {
+    "snapshot_id": "20261117T165542Z",
+    "created_at": "2026-11-17T16:55:42.114Z",
+    "manifest_cid": "bafkreic7rhex5ehw6jqylc4egpvwptbbimxorntmsm632uis2py4olo5wq",
+    "root_cid": "bafybeicjf4llu36mn75mu2v6rbxzbgc5cznhqntfkujadfoahafywx6eia",
+    "car_cid": "bafybeiayqxvttu2bsppndqu7ufvb4d73l2sbwn4cvfioccoka2i57nqp3m",
+    "previous_manifest_cid": "bafkreiecrknmweialqcdloyohji46vo4esr7vkkw4laxxiq4golcmg7wjq"
+  }
+]

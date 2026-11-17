@@ -1,0 +1,187 @@
+{
+  "schema": "oracle-snapshot-manifest/1",
+  "county": {
+    "name": "Miami-Dade",
+    "state": "FL",
+    "fips": "12086",
+    "slug": "miami-dade"
+  },
+  "snapshot_id": "20261117T060445Z",
+  "created_at": "2026-11-17T06:04:45.281Z",
+  "root": {
+    "cid": "bafybeiea25rq5xhfaxxxdojanlbeulg7rvcrcodwx2ubui2pbhdt5fpcvy",
+    "codec": "directory"
+  },
+  "previous": {
+    "snapshot_id": "20261117T050847Z",
+    "manifest_cid": "bafkreid7rvjugll3nrdmgj4gs6a3wy4ko3mlbtzdbohxxl54fqmdoyeg7q",
+    "root_cid": "bafybeiaxyhj7oulrxfe4sogp3fqgex5oktarduz6hcvhh72voezo4be46e"
+  },
+  "artifacts": [
+    {
+      "name": "/",
+      "cid": "bafybeiea25rq5xhfaxxxdojanlbeulg7rvcrcodwx2ubui2pbhdt5fpcvy",
+      "codec": "directory",
+      "size": 184755147,
+      "sha256": null
+    },
+    {
+      "name": "coverage.json",
+      "cid": "bafkreigemugpvl7axm2fwmkbjbnvfbos2eiod4onh5cyykolp6oxc22srm",
+      "codec": "file",
+      "size": 6858,
+      "sha256": "c4650cfaafe0bb345b3141485b5285d2d110e1f1cd3f458c29cb7f9d716b528b"
+    },
+    {
+      "name": "runs.json",
+      "cid": "bafkreibs62ut6znj2xmigelb3rf2ap5ywjhdgmfyc3wrtutslqtht2fcu4",
+      "codec": "file",
+      "size": 8276,
+      "sha256": "32f6a93f65a9d5d8831161dc4ba03fb8b24e3330b816ed19d2725c2679e8a2a7"
+    },
+    {
+      "name": "samples",
+      "cid": "bafybeid7bf5wagxqss7dzcowiyrhp5ftre5kg2qnzqn4ulnutpzt67x4fq",
+      "codec": "directory",
+      "size": 325241,
+      "sha256": null
+    },
+    {
+      "name": "samples/contractor.json",
+      "cid": "bafkreidmc2g7eqy6pkopbrmlh2o5pcwnvlltdtpavnzv7nna2xv4q6lywm",
+      "codec": "file",
+      "size": 98550,
+      "sha256": "6c168df2431e7a9cf0c58b3e9dd78acdaad731cde0ab735fb5a0d5ebc87978b3"
+    },
+    {
+      "name": "samples/open_roofing_permits.json",
+      "cid": "bafkreiaqwlazgwxzxr72j5o2nqwkgk6nydvyto5dwffrr2ayigdk34vd24",
+      "codec": "file",
+      "size": 109204,
+      "sha256": "10b2c1935af9bc7fa4f5da6c2ca32bcdc0eb89bba3b14b18e8184186adf2a3d7"
+    },
+    {
+      "name": "samples/property.json",
+      "cid": "bafkreih3qpmid7bm2arqlsapz6kwrle7fbh7pewtrwsj7jigbmfzz7amei",
+      "codec": "file",
+      "size": 117292,
+      "sha256": "fb83d881fc2cd02305c80fcf9568ac9f284ff792d38da49fa5060b0b9cfc0c22"
+    },
+    {
+      "name": "state",
+      "cid": "bafybeidrqa327rjnyqqodw6qrswmhiuja6ktdxy4udgtfifgsvimg6ixhe",
+      "codec": "directory",
+      "size": 69388248,
+      "sha256": null
+    },
+    {
+      "name": "state/key_state_contractors.parquet",
+      "cid": "bafybeibt2hmvp5hzihmg4jtaiyxnrn27zqvtxbwtu5brpunmamlfh6xj24",
+      "codec": "file",
+      "size": 1070641,
+      "sha256": "106f01081b27d941a390a9acb921f870fbc6c434f0832bd928a6aa76979811d3"
+    },
+    {
+      "name": "state/key_state_permits.parquet",
+      "cid": "bafybeifws5khr6heh6jx3ljhynv424nfbjptily7kqul4weygdh4w5czfq",
+      "codec": "file",
+      "size": 17827713,
+      "sha256": "970696d9ce7cfe47cac0429abe2f1d938cde66f6b33dcc5bc495336b0b54a762"
+    },
+    {
+      "name": "state/key_state_properties.parquet",
+      "cid": "bafybeiaolgqqq4dpuvd576iy6jl3zcmyrc4wshqhffxbwnd5i4h73f5fpa",
+      "codec": "file",
+      "size": 34703062,
+      "sha256": "ce3a5faf14e58ceb1005b2bc067128fa03d928d7fcfd7fb010d4764b838ec5c1"
+    },
+    {
+      "name": "state/key_state_state_licences.parquet",
+      "cid": "bafybeigto2rgkwhjcke566nw4ro2snhdiyjn6xpnde3fkhhhodwtumvubu",
+      "codec": "file",
+      "size": 15766173,
+      "sha256": "80134668cb5ffd03852f749870c873e4ab8cef7bad462202ecb8d7b0c9e7b014"
+    },
+    {
+      "name": "state/pipeline_change.parquet",
+      "cid": "bafkreic3ej3qzazwvxcav35fhyg5iiquq7jffk3j3yp5hgqh4o7dywbxbu",
+      "codec": "file",
+      "size": 165,
+      "sha256": "5b22770c8336adc40aefa53e0dd4221487d252ab69de1fd39a07e3be3c58370d"
+    },
+    {
+      "name": "state/pipeline_run_source.parquet",
+      "cid": "bafkreighmawnuobxqyot7kahtgkrbzfls7zcm2a3vb6vqecrd3e5aiya3u",
+      "codec": "file",
+      "size": 5258,
+      "sha256": "c7602cda3837861d3fa807999510e4ab97f226681ba87d5810511ec9d02300dd"
+    },
+    {
+      "name": "state/pipeline_run.parquet",
+      "cid": "bafkreifxkmhctmjgcplpsi2ettvh5g2e2lwuxyfruwpu6ow6i35swwb2ta",
+      "codec": "file",
+      "size": 1290,
+      "sha256": "b7530e29b12613d6f923449cea7e9b44d2ed4be0b1a59f4f3ade46fb2b583a98"
+    },
+    {
+      "name": "tables",
+      "cid": "bafybeie52lmornbnixegavcgv2bpemkrha7uw2yxa7pjjlsb7ib5yaqmky",
+      "codec": "directory",
+      "size": 115026250,
+      "sha256": null
+    },
+    {
+      "name": "tables/business.parquet",
+      "cid": "bafybeidveqebadtzttqb4wnkztaivc2bndxipbtmukq2bep7lsej2fzqoa",
+      "codec": "file",
+      "size": 6584580,
+      "sha256": "c6035f898bff384fec243357e218a7f3dd09bdaee68d0a788be35a42571f2199"
+    },
+    {
+      "name": "tables/contractor.parquet",
+      "cid": "bafybeifgdyae4dc62rug4cbk3uzd3zftu452243ym7c52redw43e2bk4uy",
+      "codec": "file",
+      "size": 528675,
+      "sha256": "ac810c02a80305c99dee387d0230cdb09948394d0eb5fc3323c2e65596758dab"
+    },
+    {
+      "name": "tables/owner.parquet",
+      "cid": "bafybeidz43ruyjznspwijxwjjaymxwic7hkl77ctzifix6ke2e4v52empy",
+      "codec": "file",
+      "size": 29795342,
+      "sha256": "6d3d6d0c6ef982160e06f9d29af937284f206bb06429130259cf089aaed22e6b"
+    },
+    {
+      "name": "tables/permit.parquet",
+      "cid": "bafybeihmrikc7dszp4caszd2d5g2pbdg6ldtlus7kchttejdu5ifnlcdoe",
+      "codec": "file",
+      "size": 21923998,
+      "sha256": "690e99fca09cb40018d06625f33bb46c0bf7e117e840f043799948c78d0e356d"
+    },
+    {
+      "name": "tables/place.parquet",
+      "cid": "bafkreigztuwsjkkrv3xjzpp75zbmjn6xnkivhsecpm7sddp2csi2qzv27i",
+      "codec": "file",
+      "size": 1614,
+      "sha256": "d99d2d24a951aeee9cbdffee42c4b7d76a9153c8827b3f218dfa1491a866bafa"
+    },
+    {
+      "name": "tables/property.parquet",
+      "cid": "bafybeifmd5ytg2rjia4ppitcr5zmrvusjugzt7gjkuzglxudvhb33bjw5m",
+      "codec": "file",
+      "size": 56169400,
+      "sha256": "2f4d21b78e45e69fc8b0e9e9024617fe14cb2583e815de401a04e251d48b1164"
+    }
+  ],
+  "car": {
+    "name": "snapshot.car",
+    "cid": "bafybeifwufg2hvbrymn3ehxikeppqy4232o3vohpv7yxvfvvmqzqxla25a",
+    "codec": "file",
+    "size": 184783809,
+    "sha256": "bdc46c081938dc4311d535dd56493181d121cfc97e8fd6670666c2d4c4692032",
+    "roots": [
+      "bafybeiea25rq5xhfaxxxdojanlbeulg7rvcrcodwx2ubui2pbhdt5fpcvy"
+    ],
+    "blocks": 734
+  }
+}
